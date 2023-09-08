@@ -6,7 +6,7 @@ import Profile from "routes/Profile";
 const RouterList = ({ refresh, isLogin, userInfo }) => {
   console.log("D");
   return (
-    <Router basename="tweeter_clone">
+    <Router basename={process.env.PUBLIC_URL}>
       {isLogin && <Navigation userInfo={userInfo} />}
       <div
         style={{
