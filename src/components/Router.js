@@ -6,7 +6,7 @@ import Profile from "routes/Profile";
 const RouterList = ({ refresh, isLogin, userInfo }) => {
   console.log("D");
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/">
       {isLogin && <Navigation userInfo={userInfo} />}
       <div
         style={{
