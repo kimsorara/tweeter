@@ -4,9 +4,8 @@ import Auth from "routes/Auth";
 import Navigation from "./Navigation";
 import Profile from "routes/Profile";
 const RouterList = ({ refresh, isLogin, userInfo }) => {
-  console.log("D");
   return (
-    <Router basename="/">
+    <Router>
       {isLogin && <Navigation userInfo={userInfo} />}
       <div
         style={{
