@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import Profile from "routes/Profile";
 const RouterList = ({ refresh, isLogin, userInfo }) => {
   return (
-    <Router>
+    <Router basename="/">
       {isLogin && <Navigation userInfo={userInfo} />}
       <div
         style={{
